@@ -8,6 +8,15 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
+app.get('art-one',function(req,res){
+    res.send("this is my article one");
+});
+app.get('art-two',function(req,res){
+    res.send("this is my article two");
+});
+app.get('art-three',function(req,res){
+    res.send("this is my article three");
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
