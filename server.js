@@ -11,10 +11,10 @@ app.get('/', function (req, res) {
 app.get('/art-one',function(req,res){
     res.send("this is my article one");
 });
-app.get('art-two',function(req,res){
+app.get('/art-two',function(req,res){
     res.send("this is my article two");
 });
-app.get('art-three',function(req,res){
+app.get('/art-three',function(req,res){
     res.send("this is my article three");
 });
 
